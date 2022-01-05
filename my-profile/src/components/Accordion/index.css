@@ -1,0 +1,16 @@
+.accordion{
+    margin:40px
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    background-color: #efefef;
+    border-radius: 6px;
+}
+.response{
+  background-color: white;
+  padding: 10px;
+}

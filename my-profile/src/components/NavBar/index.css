@@ -1,0 +1,26 @@
+.navBar{
+    width: 100%;
+    height: 50px;
+    background: #efefef;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center
+}
+
+.myName{
+    font-weight: 700;
+    font-size: 20px
+}
+
+.tabs{
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    gap: 30px
+}
+
+.elem{ margin:0}
+
+.selected{ font-weight: 700; margin: 0 }
