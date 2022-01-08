@@ -9,7 +9,9 @@
     border-bottom: 1px solid white;
     background-color: #efefef;
     border-radius: 6px;
+    cursor:pointer;
 }
+
 .response{
   background-color: white;
   padding: 10px;

@@ -6,8 +6,8 @@ export default () => {
     const tabsNames = [
         'Mis intereses',
         'Currículum',
-        'Artículos',
-        'Proyectos y tecnologias' 
+        'Proyectos',
+        'Tecnologias' 
     ]
     
     const [selectedTab, setSelectedTab] = useState(0)
@@ -15,7 +15,7 @@ export default () => {
     return (
         <div className='navBar'>
             <div className='myName'>
-                Micaela Felder
+                <span className='letter'>M</span>icaela <span className='letter'>F</span>elder
             </div>
             <div className='tabs'>
                 {
@@ -29,9 +29,7 @@ export default () => {
                     })
                 }
             </div>
-            <div>
-                Aca va el logo
-            </div>
+            <div className='space'></div>
         </div>
     )
 }

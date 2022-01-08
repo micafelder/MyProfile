@@ -33,18 +33,19 @@ export default () => {
         else setSelectedQuestion(index)
     }
 
-    return(
+    return (
         <div className='accordion'>
             {
-                preguntas.map((pregunta,index) => {
+                preguntas.map((pregunta, index) => {
                     return (
                         <div key={index}>
-                            <div className='question'>
+                            <div className='question' onClick={() => ShowResponse(index)}>
                                 <div>{pregunta.q}</div>
-                                <div onClick={()=> ShowResponse(index)}>{
-                                selectedQuestion!==index? '▼': '▲' }</div>
+                                <div>
+                                    {selectedQuestion !== index ? '▼' : '▲'}
+                                </div>
                             </div>
-                            { selectedQuestion===index && <div className='response'>{pregunta.a}</div> }
+                            {selectedQuestion === index && <div className='response'>{pregunta.a}</div>}
                         </div>
                     )
                 })

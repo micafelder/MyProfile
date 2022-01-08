@@ -5,12 +5,17 @@
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    align-items: center
+    align-items: center;
+}
+
+.space{
+    width: 127px;
 }
 
 .myName{
-    font-weight: 700;
-    font-size: 20px
+    font-weight: 400;
+    font-size: 20px;
+    cursor:pointer;
 }
 
 .tabs{
@@ -18,9 +23,15 @@
     display: flex;
     align-items: flex-start;
     font-size: 14px;
-    gap: 30px
+    gap: 30px;
+    cursor:pointer;
 }
 
 .elem{ margin:0}
 
 .selected{ font-weight: 700; margin: 0 }
+
+.letter{
+    font-style: italic; 
+    font-weight: 700;
+}
