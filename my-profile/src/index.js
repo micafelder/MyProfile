@@ -3,7 +3,9 @@ import ReactDom from "react-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Accordion from "./components/Accordion";
-import Button from "./components/Button";
+import Article from './components/Article'
+import articles from "./articles";
+import styles from './index.css'
 
 const App = () => {
 
@@ -11,7 +13,15 @@ const App = () => {
         <div>
             <NavBar />
             <Accordion />
-            <Button text={'LEER MÁS'}/>
+            <div className='a'>
+            {
+                articles.map((article, index) => {
+                    return (
+                        <Article  key={index} img={article.img} title={article.title} desc={article.desc} ></Article>
+                    )
+                })
+            }
+            </div>
             <Footer />
         </div>
     )

@@ -1,0 +1,24 @@
+
+.article{
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    cursor:pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.img{
+    height: 100px;
+    width: 100px;
+    cursor:pointer;
+    object-fit: cover;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
