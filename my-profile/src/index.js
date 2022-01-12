@@ -5,22 +5,32 @@ import Footer from "./components/Footer";
 import Accordion from "./components/Accordion";
 import Article from './components/Article'
 import articles from "./articles";
-import styles from './index.css'
+import styles from './index.css';
+import Route from './components/Route'
 
 const App = () => {
 
     return (
         <div>
             <NavBar />
-            <Accordion />
-            <div className='a'>
-            {
-                articles.map((article, index) => {
-                    return (
-                        <Article  key={index} img={article.img} title={article.title} desc={article.desc} ></Article>
-                    )
-                })
-            }
+            <div className='body'>
+                
+                <Route path="/">
+                    <Accordion/>
+                </Route>
+                
+                <Route path="/articles">
+                    <div className='a'>
+                        Articulos de mi interes
+                        {
+                            articles.map((article, index) => {
+                                return (
+                                    <Article  key={index} img={article.img} title={article.title} desc={article.desc} ></Article>
+                                )
+                            })
+                        }
+                    </div>
+                </Route>
             </div>
             <Footer />
         </div>

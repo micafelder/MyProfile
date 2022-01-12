@@ -1,30 +1,45 @@
 import { useState } from 'react'
 import styles from './index.css'
+import Link from '../Link'
 
 export default () => {
     
-    const tabsNames = [
-        'Mis intereses',
-        'Currículum',
-        'Proyectos',
-        'Tecnologias' 
+    const sections = [
+        {
+            name:'Currículum',
+            href:'curriculum'
+        },
+        {
+            name: 'Mis intereses',
+            href: 'articles'
+        },
+        {
+            name: 'Proyectos',
+            href: 'projects'
+        },
+        {
+            name: 'Tecnologias',
+            href: 'technologies'
+        }
     ]
     
     const [selectedTab, setSelectedTab] = useState(0)
     
     return (
         <div className='navBar'>
-            <div className='myName'>
+            <Link href='/' className='myName'>
                 <span className='letter'>M</span>icaela <span className='letter'>F</span>elder
-            </div>
+            </Link>
             <div className='tabs'>
                 {
-                    tabsNames.map((tab, index) => {
+                    sections.map((section, index) => {
                         return(
-                            <p 
+                            <Link 
+                              href={section.href}
                               key={index}
                               className={selectedTab===index? 'selected' : 'elem'}
-                              onClick={() => setSelectedTab(index)}> {tab} </p>
+                              children={section.name}
+                            />
                         )
                     })
                 }
