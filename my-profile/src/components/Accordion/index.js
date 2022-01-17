@@ -5,8 +5,13 @@ export default () => {
 
     const preguntas = [
         {
-            q: 'Cuantos años tenes?',
-            a: 'Tengo 22 años'
+            q: 'Que me gusta hacer en mi tiempo libre?',
+            a: [
+                'Salir con amigos y con mi novio.',
+                'Salir a caminar a la rambla.',
+                'Mirar series.',
+                'Escuchar podcasts.'
+            ]
         },
         {
             q:'Tenes auto?',
@@ -24,7 +29,6 @@ export default () => {
 
     const [selectedQuestion, setSelectedQuestion] = useState(-1)
 
-
     const ShowResponse = (index) => {
         //Me fijo si mi indice es el que esta seleccionado,
         //Si mi indice no esta seleccionado, lo pongo como el nuevo indice, y muestro mi respuesta
@@ -32,6 +36,14 @@ export default () => {
         if(index===selectedQuestion) setSelectedQuestion(-1)
         else setSelectedQuestion(index)
     }
+
+    const showList = (list) => (
+        <ul>
+          {list.map(item => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+    );
 
     return (
         <div className='accordion'>
@@ -45,7 +57,12 @@ export default () => {
                                     {selectedQuestion !== index ? '▼' : '▲'}
                                 </div>
                             </div>
-                            {selectedQuestion === index && <div className='response'>{pregunta.a}</div>}
+                            {selectedQuestion === index && !Array.isArray(pregunta.a) && <div className='response'>{pregunta.a}</div>}
+                            {selectedQuestion === index && Array.isArray(pregunta.a) &&
+                                <div className='response'>
+                                    {showList(pregunta.a)}
+                                </div>
+                            }
                         </div>
                     )
                 })
