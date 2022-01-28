@@ -22,7 +22,7 @@
 }
 
 .tabs{
-    font-weight: 400;
+    font-weight: 200;
     display: flex;
     align-items: flex-start;
     font-size: 14px;
@@ -32,7 +32,7 @@
 
 .elem{ margin:0}
 
-.selected{ font-weight: 700; margin: 0 }
+.selected{ font-weight: 300; margin: 0 }
 
 .letter{
     font-style: italic; 

@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './index.css'
+import Link from '../Link/index'
 
 const Article = (props) =>{
 
     return(
-        <div className='article'>
+        <Link href={props.href} className='article'>
 
             <img className='img' src={require(`../../articles/images/${props.img}.png`)} />
            
@@ -13,7 +14,7 @@ const Article = (props) =>{
                 <div>{props.desc}</div>
             </div>
 
-        </div>
+        </Link>
     )
 }
 

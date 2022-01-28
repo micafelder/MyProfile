@@ -4,26 +4,36 @@ import { useState } from 'react'
 export default () => {
 
     const preguntas = [
+        {  
+            q:'Sobre mí',
+            a:[
+                'Tengo 22 años, vivo en Montevideo Uruguay.',
+                'Estudio Licenciatura en Sistemas en  la ORT, comence la carrera en el 2019 (comenzando 4to año).',
+                'Luego del liceo me fui un año a Israel a estudiar Liderazgo con amigos.',
+                'Creativa, con muchas ganas de aprender y de trabajar en equipo.'
+            ]
+           
+        },
         {
-            q: 'Que me gusta hacer en mi tiempo libre?',
+            q: 'Intereses',
             a: [
-                'Salir con amigos y con mi novio.',
-                'Salir a caminar a la rambla.',
-                'Mirar series.',
-                'Escuchar podcasts.'
+                'Estudio danza',
+                'Viajar',
+                'Diseño',
+                'Coaching'
             ]
         },
         {
-            q:'Tenes auto?',
-            a:'No'
+            q: 'Idiomas',
+            a: [
+                'Inglés: CPE (2020) y FCE (certificado)',
+                'Portugués: dominio oral y escrito básico'
+            ]
         },
         {
-            q: 'Cuantos años tenes?',
-            a: 'Tengo 22 años'
-        },
-        {
-            q:'Tenes auto?',
-            a:'No'
+            q:'Experiencia Laboral',
+            a:`Trabajé de Marzo a Octubre de 2021 en E&Y (Ernst and Young) como Asistente de Consultoría
+            (RPA y Auditoría de Sistemas).`
         }
     ]
 

@@ -1,0 +1,24 @@
+.img{
+    border-radius: 100%;
+    margin-left: 60px;
+}
+
+.rightColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 35px;
+}
+
+.personality{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left:35px;
+}

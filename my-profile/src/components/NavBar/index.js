@@ -6,25 +6,27 @@ export default () => {
     
     const sections = [
         {
+            id:0,
             name:'Currículum',
             href:'curriculum'
         },
         {
+            id:1,
             name: 'Mis intereses',
             href: 'articles'
         },
         {
+            id:2,
             name: 'Proyectos',
             href: 'projects'
         },
         {
+            id:3,
             name: 'Tecnologias',
             href: 'technologies'
         }
     ]
-    
-    const [selectedTab, setSelectedTab] = useState(0)
-    
+        
     return (
         <div className='navBar'>
             <Link href='/' className='myName'>
@@ -37,8 +39,8 @@ export default () => {
                             <Link 
                               href={section.href}
                               key={index}
-                              className={selectedTab===index? 'selected' : 'elem'}
                               children={section.name}
+                              className={styles.selected}
                             />
                         )
                     })
