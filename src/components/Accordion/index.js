@@ -8,7 +8,7 @@ export default () => {
             q:'Sobre mí',
             a:[
                 'Tengo 22 años, vivo en Montevideo Uruguay.',
-                'Estudio Licenciatura en Sistemas en  la ORT, comence la carrera en el 2019 (comenzando 4to año).',
+                'Estudio Licenciatura en Sistemas en  la ORT, comence la carrera en el 2019 (cursando tercer año).',
                 'Luego del liceo me fui un año a Israel a estudiar Liderazgo con amigos.',
                 'Creativa, con muchas ganas de aprender y de trabajar en equipo.'
             ]

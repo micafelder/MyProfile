@@ -12,7 +12,7 @@ export default () => {
         },
         {
             id:1,
-            name: 'Mis intereses',
+            name: 'Artículos',
             href: 'articles'
         },
         {
@@ -22,7 +22,7 @@ export default () => {
         },
         {
             id:3,
-            name: 'Tecnologias',
+            name: 'Tecnologías',
             href: 'technologies'
         }
     ]

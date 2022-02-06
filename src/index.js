@@ -27,8 +27,8 @@ const App = () => {
                 </Route>
 
                 <Route path="/articles">
+                    <div className='title'>Artículos de mi interes</div>
                     <div className='a'>
-                        Articulos de mi interes
                         {
                             articles.map((article, index) => {
                                 return (
